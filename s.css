@@ -1,0 +1,445 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/11/2018, 16:45:38
+    Author     : Bruno
+*/
+
+@charset "utf-8"; *{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+@font-face{
+    font-family: 'ABeeZee', Verdana, sans-serif;/*Nome da(s) fonte*/
+    src: url('');/*ENDEReÃ§o ou local da(s) fonte*/
+    src: url('') format('truetype');/*ENDEReÃ§o ou local da(s) fonte e seu formato*/
+    font-weight: normal;/*Tamanho da fonte*/
+    font-style: normal;/*estilo da fonte*/
+}
+
+body{
+    background: black;
+    font-size: 65%;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
+}
+
+.corpo{
+    width: 88%;
+    margin: 0 auto;
+    max-width: 1186px;
+    text-align: left;
+    clear: both;
+}
+
+div#cabecario{
+    float: left;
+    background:rgba(0, 0, 0, 0) url("") no-repeat scroll center top;
+    width: 100%;
+}
+
+#logo{
+    float: left;
+    margin: 18px 0 0 18px;
+}
+
+#buscar{
+    float: right;
+    height: 88px;
+    width: 414px;
+}
+
+#campobuscar{
+    float: left;
+    height: 36px;
+    margin-top: 25px;
+    padding-top: 4px;
+    width: 412px;
+    border-radius: 2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.campoBuscar{
+    float: left;
+    padding-left: 7px; 
+}
+
+.campoBuscar input{
+    background-color: black;
+    border: 1px solid #333;
+    color: #BEBEBE;
+    padding: 4px 3px;
+    width: 284px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.buscarButao{
+    float: left;
+    line-height: 36px;
+}
+
+#campobuscar button{
+    background-color: #666;
+    border: medium none;
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#campobuscar button:hover{
+    background: #f8f8f8;
+    border: 1px solid #666;
+}
+
+#menuNavegacao{
+    float: left;
+    height: 31px;
+    width: 1186px;
+    background: black;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul#topNavegacao{
+    height: 31px;
+}
+
+ul#topNavegacao, ul#topNavegacao li{
+    float: left;
+}
+
+ul#topNavegacao li a{
+    display: block;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 31px;
+    padding: 0 15px;
+    text-shadow: 1px 1px 20px blue;
+    font-family: "A Charming Font Superexpanded";
+}
+
+ul#topNavegacao li a:hover{
+    color: #ccc;
+}
+
+#menuNavegacao a{
+    color:  black;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#abrirmenu{
+    float: left;
+    height: 31px;
+    width: 100%;
+    background: black;
+    background: -webkit-linear-gradient(top, #666 0%,#666 100%); /* Chrome10-25,Safari5.1-6 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c82343', endColorstr='#96172f',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 6px;
+    display: none;
+}
+
+div#menuMobile{
+    background: black;
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
+
+#menuMobile li{
+    border-top: 1px solid #810f24;
+    padding: 9px 0;
+}
+
+div#pagina{
+    float: left;
+    width: 100%;
+}
+
+#conteudo{
+    background: black;
+    float:left;
+    width:860px;
+}
+
+.caixaPrincipal{
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-top: 20px; 
+}
+
+.caixaPrincipal{
+    margin-top: 12px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+
+.title{    
+    background: #141414; /* Old browsers */
+    background: -moz-linear-gradient(top, #141414 0%, #141414 49%, #000000 50%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #141414 0%,#141414 49%,#000000 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #141414 0%,#141414 49%,#000000 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    border-bottom: 1px solid #191919;
+    line-height: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title h2{
+    color: #999;
+    float: left;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.Link {
+    color: #c24767;
+    float: right;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.Link a {
+    color: #c24767;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+li.ListaPrincipal{
+    float: left;
+    height: 180px;
+    margin-right: 6px;
+    width: 19%;
+    padding: 5px;
+}
+
+.videoThumb{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videoThumb img{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videoTitle a{
+    color: #9a9a9a;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5px;
+    min-height: 45px;
+}
+
+#footer{
+    background-color: #0e0e0e;
+    border: 1px solid #191919;
+    margin-bottom: 40px;
+    margin-top: 26px;
+    width: 980px;
+    float: left;
+    overflow: hidden;
+}
+
+#footer ul {
+    margin: 20px 0 5px 20px;
+    overflow: hidden;
+}
+
+#footer ul li {
+    float: left;
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.textF{
+    color: #202020;
+    margin-left: 5px;
+}
+
+p.textFooter{
+    color: #202020;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+p.textFooter a {
+    color: #202020;
+    text-decoration: underline;
+}
+/*configurações das tags html*/
+a {
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+ul li{
+    overflow: hidden;
+}
+
+@media only screen and(min-width: 728px) and (max-width: 1024px){
+    #conteudo{
+        width: 100%;
+    }
+    
+    .corpo{
+        width: 100%;
+    }
+    
+    div#cabecario{
+        background:  #000;
+    }
+    
+    #logo{
+        float: none;
+        margin: 18px auto;
+        width: 264px;
+    }
+    
+    #logo img{
+        width: 100%;
+    }
+    
+    #campobuscar{
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .campoBuscar{
+        width: 83%;
+    }
+    
+    .buscarButao input{
+        width: 100%;
+    }
+    
+    #buscar{
+        height: 36px;
+        margin: 0 auto 13px;
+        width: 97%;
+        float: none;
+    }
+    
+    #menuNavegacao{
+        width: 100%;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        display: none;
+    }
+    
+    div#pagina{
+        padding: 0 10px;
+    }
+    
+    #footer{
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width: 728px){
+    .corpo{
+        width: 100%;
+    }
+    
+    div#cabecario{
+        background:#000;
+    }
+    
+    #logo{
+        float: none;
+        margin: 18px auto;
+        width: 264px;
+    }
+    
+    #logo img{
+        width: 100%;
+    }
+    
+    #campobuscar{
+        width: 100%;
+        margin-top: 0;
+    }
+    
+    .campoBuscar{
+        width: 83%;
+    }
+    
+    .buscarButao input{
+        width: 100%;
+    }
+    
+    #buscar{
+        height: 36px;
+        margin: 0 auto 13px;
+        width: 97%;
+        float: none;
+    }
+    
+    #menuNavegacao{
+        width: 100%;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        display: none;
+    }
+    
+    div#pagina{
+        padding: 0 10px;
+    }
+    
+    #conteudo{
+        width: 100%;
+    }
+    
+    #footer{
+        width: 100%;
+    }
+    
+    #abrirmenu{
+        display: block;
+    }
+    
+    li.ListaPrincipal{
+        width: 95%;
+    }
+    
+    li.ListaPrincipal{
+        width: 48%;
+    }
+}
